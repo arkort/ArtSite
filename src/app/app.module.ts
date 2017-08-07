@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin/admin.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +22,14 @@ import { AdminComponent } from './admin/admin.component';
   imports: [
       BrowserModule,
       FormsModule,
+      HttpClientModule,
       RouterModule.forRoot([
           {
               path: 'home',
               component: HeaderComponent
           },
           {
-              path: 'admin',
+              path: 'login',
               component: AdminComponent
           },
           {

@@ -1,6 +1,6 @@
 ﻿
     <form #f="ngForm" (ngSubmit)="login()">
        <input type="password" placeholder="Введите пароль" [(ngModel)]="user.password" required  name="password"/>
-      <input type="submit" value="Войти" [disabled]="!f.valid"/>
+       <input type="submit" value="Войти" [disabled]="!f.valid"/>
     </form>
 
