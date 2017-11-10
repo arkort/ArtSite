@@ -1,0 +1,25 @@
+<section id="main">
+
+    <!-- Thumbnails -->
+    <section class="thumbnails">
+        <div>
+            <a *ngFor="let thumb of thumbs | filter: UIColumn:0 " href="/api/pictures/{{thumb}}">
+                <img src="/api/thumbs/{{thumb}}" alt="" />
+                <h3>Lorem ipsum dolor sit amet</h3>
+            </a>
+        </div>
+        <div>
+            <a *ngFor="let thumb of thumbs | filter:UIColumn:1 " href="/api/pictures/{{thumb}}">
+                <img src="/api/thumbs/{{thumb}}" alt="" />
+                <h3>Lorem ipsum dolor sit amet</h3>
+            </a>
+        </div>
+        <div>
+            <a *ngFor="let thumb of thumbs | filter: UIColumn:2 " href="/api/pictures/{{thumb}}">
+                <img src="/api/thumbs/{{thumb}}" alt="" />
+                <h3>Lorem ipsum dolor sit amet</h3>
+            </a>
+        </div>
+    </section>
+
+</section>
